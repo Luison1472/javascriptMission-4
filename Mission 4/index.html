@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./Calendar.js"></script>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <h1>DatePicker</h1>
+    <input type="text" id="datepicker" placeholder="Select a date" />
+    <div id="calendar-container">
+      <!-- 달력을 여기에 넣으세요 -->
+      <table class="Calendar">
+        <thead>
+          <tr class="year">
+            <td colspan="10">
+              <img
+                src="./stylesheet/white arrow.png"
+                class="prev"
+                alt="이전달"
+                onclick="prevCalendar()"
+              />
+              <span id="calMonth"></span><br /><span id="calYear"></span>
+              <img
+                src="./stylesheet/white arrow.png"
+                class="next"
+                alt="다음달"
+                onclick="nextCalendar()"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>SUN</td>
+            <td>MON</td>
+            <td>TUE</td>
+            <td>WED</td>
+            <td>THU</td>
+            <td>FRI</td>
+            <td>SAT</td>
+          </tr>
+        </thead>
+
+        <tbody></tbody>
+      </table>
+    </div>
+  </body>
+</html>
