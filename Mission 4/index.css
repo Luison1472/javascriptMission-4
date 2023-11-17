@@ -14,6 +14,10 @@
      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
  }
 
+ :root {
+     --calendar-font-size: 25px;
+ }
+
  #datepicker {
      text-align: left;
      width: auto;
@@ -29,6 +33,9 @@
  }
 
  .Calendar {
+     width: var(--calendar-size);
+     height: var(--calendar-size);
+     font-size: var(--calendar-size);
      position: relative;
      left: 37%;
      text-align: center;
@@ -93,4 +100,14 @@
      color: #fff;
      cursor: pointer;
      border-radius: 50%;
+ }
+
+ .futureDay:hover,
+ .today:hover,
+ .pastDay:hover {
+     background-color: rgb(19, 203, 129);
+     color: #fff;
+     cursor: pointer;
+     border-radius: 50%;
+     transition: background-color 0.3s ease;
  }
